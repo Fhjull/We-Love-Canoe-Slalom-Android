@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/border.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/border_box.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/emoji_color_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_box_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_box_text_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_button_emoji_circle_background_selected.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_button_happy_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_circle_regular.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_circle_selected.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_circle_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_emoji_happy_selected.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_emoji_happy_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_emoji_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_flat_regular.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_flat_selected.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_flat_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_flat_text_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/font-v26/montserrat.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/font/montserrat.xml" value="0.16041666666666668" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout-v23/morning_test.xml" value="0.2105978260869565" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/activity_results.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/activity_test.xml" value="0.264" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/calendar.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/evening_test.xml" value="0.264" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/fragment_evening_test.xml" value="0.264" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/fragment_main_menu.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/fragment_morning_test.xml" value="0.264" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/fragment_results.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/fragment_tests_menu.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/morning_test.xml" value="0.264" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/results.xml" value="0.19202898550724637" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

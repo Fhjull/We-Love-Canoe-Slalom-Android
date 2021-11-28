@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/page_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/morning_test_night_sleep_header_text"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+            -->
+        <RadioGroup
+            android:id="@+id/morning_test_night_sleep_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_6"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_6"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_7"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_7"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_8"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_8"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_9"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_9"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_sleep_10"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_10"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_forms"
+            android:text="@string/morning_test_night_quality_header_text"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+            -->
+        <RadioGroup
+            android:id="@+id/morning_test_night_quality_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_night_quality_good"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/form_field_height"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/morning_test_night_quality_good_text"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_quality_bad"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/form_field_height"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/morning_test_night_quality_bad_text"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_night_quality_none"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/form_field_height"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/morning_test_night_quality_none_text"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_between_forms"
+            android:text="@string/morning_test_pulse_sitting_header_text"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/morning_test_pulse_sitting_description_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/morning_test_pulse_sitting_edit_text"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/form_field_height"
+            android:background="@drawable/border_box"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_between_forms"
+            android:text="@string/morning_test_pulse_standing_header_text"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/morning_test_pulse_standing_description_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/morning_test_pulse_standing_edit_text"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/form_field_height"
+            android:background="@drawable/border_box"
+            android:inputType="number"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_between_forms"
+            android:text="@string/morning_test_muscle_pain_header_text"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/morning_test_muscle_pain_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/form_field_height"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/morning_test_muscle_pain_none"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/radio_button_emoji_circle_background_selector"
+                android:button="@android:color/transparent"
+                android:foreground="@drawable/emoji_happy"
+                android:foregroundTint="@color/green_smile" />
+
+            <RadioButton
+                android:id="@+id/morning_test_muscle_pain_weak"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space_between_emojis"
+                android:background="@drawable/radio_button_emoji_circle_background_selector"
+                android:button="@android:color/transparent"
+                android:foreground="@drawable/emoji_smile"
+                android:foregroundTint="@color/light_green_smile" />
+
+            <RadioButton
+                android:id="@+id/morning_test_muscle_pain_moderate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space_between_emojis"
+                android:background="@drawable/radio_button_emoji_circle_background_selector"
+                android:button="@android:color/transparent"
+                android:foreground="@drawable/emoji_meh"
+                android:foregroundTint="@color/yellow_smile" />
+
+            <RadioButton
+                android:id="@+id/morning_test_muscle_pain_strong"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space_between_emojis"
+                android:background="@drawable/radio_button_emoji_circle_background_selector"
+                android:button="@android:color/transparent"
+                android:foreground="@drawable/emoji_sad"
+                android:foregroundTint="@color/orange_smile" />
+
+            <RadioButton
+                android:id="@+id/morning_test_muscle_pain_insane"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space_between_emojis"
+                android:background="@drawable/radio_button_emoji_circle_background_selector"
+                android:button="@android:color/transparent"
+                android:foreground="@drawable/emoji_pain"
+                android:foregroundTint="@color/red_smile" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_between_forms"
+            android:text="@string/morning_test_mood_header_text"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/morning_test_mood_description_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/morning_test_mood_happiness_label_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+        -->
+        <RadioGroup
+            android:id="@+id/morning_test_mood_happiness_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_happiness_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_happiness_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_happiness_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_happiness_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_happiness_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_happiness_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/morning_test_mood_vivacity_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+        -->
+        <RadioGroup
+            android:id="@+id/morning_test_mood_vivacity_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_vivacity_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_vivacity_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_vivacity_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_vivacity_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_vivacity_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_vivacity_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/morning_test_mood_ambition_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+        -->
+        <RadioGroup
+            android:id="@+id/morning_test_mood_ambition_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_ambition_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_ambition_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_ambition_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_ambition_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_ambition_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_ambition_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/morning_test_mood_cheerfulness_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+        -->
+        <RadioGroup
+            android:id="@+id/morning_test_mood_cheerfulness_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_cheerfulness_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_cheerfulness_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_cheerfulness_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_cheerfulness_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_cheerfulness_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_cheerfulness_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/morning_test_mood_trepidation_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+        -->
+        <RadioGroup
+            android:id="@+id/morning_test_mood_trepidation_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_trepidation_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_trepidation_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_trepidation_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_trepidation_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_trepidation_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_trepidation_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/morning_test_mood_irritability_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+        -->
+        <RadioGroup
+            android:id="@+id/morning_test_mood_irritability_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_irritability_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_irritability_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_irritability_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_irritability_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_irritability_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_irritability_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/morning_test_mood_anger_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+        -->
+        <RadioGroup
+            android:id="@+id/morning_test_mood_anger_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_anger_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_anger_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_anger_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_anger_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_anger_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_anger_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/morning_test_mood_sadness_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <!--
+            Padding 0.5 is set, to make outer border thicker, so that it
+            will looks the same as the border between two cells, where
+            actually are two borders of nearby elements
+        -->
+        <RadioGroup
+            android:id="@+id/morning_test_mood_sadness_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_sadness_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_sadness_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_sadness_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_sadness_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_sadness_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/morning_test_mood_sadness_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/morning_test_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_between_forms"
+            android:text="@string/morning_test_submit_button_text" />
+
+    </LinearLayout>
+
+</ScrollView>

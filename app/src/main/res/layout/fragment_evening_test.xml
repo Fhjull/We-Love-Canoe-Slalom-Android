@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/page_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_day_efficiency_header_text"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_day_efficiency_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/evening_test_day_efficiency_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:drawableTop="@drawable/emoji_smile"
+                android:drawableTint="@color/radio_button_green_emoji_selector"
+                android:text="@string/Yes"
+                android:textAlignment="center"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_day_efficiency_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_between_emojis"
+                android:background="@android:color/transparent"
+                android:button="@android:color/transparent"
+                android:drawableTop="@drawable/emoji_sad"
+                android:drawableTint="@color/radio_button_red_emoji_selector"
+                android:text="@string/No"
+                android:textAlignment="center"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_between_forms"
+            android:text="@string/evening_test_today_events_header_text"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_day_events_description_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/evening_test_today_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_between_forms"
+            android:text="@string/evening_test_qualities_header_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <CheckBox
+            android:id="@+id/evening_test_qualities_strength_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_qualities_strength_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <CheckBox
+            android:id="@+id/evening_qualities_stamina_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_qualities_stamina_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <CheckBox
+            android:id="@+id/evening_test_qualities_flexibility_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_qualities_flexibility_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <CheckBox
+            android:id="@+id/evening_test_qualities_coordination_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_qualities_coordination_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <CheckBox
+            android:id="@+id/evening_test_qualities_agility_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_qualities_agility_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <CheckBox
+            android:id="@+id/evening_test_qualities_strength_endurance_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_qualities_strength_endurance_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <CheckBox
+            android:id="@+id/evening_test_qualities_speed_endurance_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_qualities_speed_endurance_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <CheckBox
+            android:id="@+id/evening_test_qualities_technic_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/evening_test_qualities_technic_text"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_between_forms"
+            android:text="@string/evening_test_food_header_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/food_text_start_margin"
+                android:layout_weight="3"
+                android:text="@string/evening_test_food_breakfast_label_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioGroup
+                android:id="@+id/evening_test_food_breakfast_radio_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/food_radio_group_end_margin"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="0.5dp">
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_breakfast_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_marginEnd="@dimen/space_between_emojis"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Yes"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_breakfast_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/No"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/food_text_start_margin"
+                android:layout_weight="3"
+                android:text="@string/evening_test_food_dinner_label_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioGroup
+                android:id="@+id/evening_test_food_dinner_radio_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/food_radio_group_end_margin"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="0.5dp">
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_dinner_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_marginEnd="@dimen/space_between_emojis"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Yes"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_dinner_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/No"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/food_text_start_margin"
+                android:layout_weight="3"
+                android:text="@string/evening_test_food_supper_label_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioGroup
+                android:id="@+id/evening_test_food_supper_radio_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/food_radio_group_end_margin"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="0.5dp">
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_supper_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_marginEnd="@dimen/space_between_emojis"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Yes"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_supper_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/No"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/food_text_start_margin"
+                android:layout_weight="3"
+                android:text="@string/evening_test_food_snack_label_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioGroup
+                android:id="@+id/evening_test_food_snack_radio_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/food_radio_group_end_margin"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="0.5dp">
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_snack_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_marginEnd="@dimen/space_between_emojis"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Yes"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_snack_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/No"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/food_text_start_margin"
+                android:layout_weight="3"
+                android:text="@string/evening_test_food_carbohydrates_label_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioGroup
+                android:id="@+id/evening_test_food_carbohydrates_radio_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/food_radio_group_end_margin"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="0.5dp">
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_carbohydrates_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_marginEnd="@dimen/space_between_emojis"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Yes"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_carbohydrates_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/No"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/food_text_start_margin"
+                android:layout_weight="3"
+                android:text="@string/evening_test_food_day_hydration_label_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioGroup
+                android:id="@+id/evening_test_food_day_hydration_radio_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/food_radio_group_end_margin"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="0.5dp">
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_day_hydration_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_marginEnd="@dimen/space_between_emojis"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Yes"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_day_hydration_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/No"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/food_text_start_margin"
+                android:layout_weight="3"
+                android:text="@string/evening_test_food_workout_hydration_label_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioGroup
+                android:id="@+id/evening_test_food_workout_hydration_radio_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/food_radio_group_end_margin"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:padding="0.5dp">
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_workout_hydration_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_marginEnd="@dimen/space_between_emojis"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/Yes"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+                <RadioButton
+                    android:id="@+id/evening_test_food_workout_hydration_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_button_box_selector"
+                    android:button="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/No"
+                    android:textColor="@drawable/radio_button_box_text_color_selector"
+                    android:textSize="@dimen/small_text_font_size" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_between_forms"
+            android:text="@string/evening_test_action_header_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/large_text_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_tv_watching_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_tv_watching_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_tv_watching_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_tv_watching_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_tv_watching_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_tv_watching_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_tv_watching_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_tv_watching_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_workout_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_workout_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_workout_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_workout_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_workout_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_workout_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_workout_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_workout_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_studying_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_studying_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_studying_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_studying_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_studying_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_studying_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_studying_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_studying_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_online_games_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_online_games_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_online_games_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_online_games_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_online_games_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_online_games_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_online_games_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_online_games_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_walking_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_walking_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_walking_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_walking_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_walking_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_walking_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_walking_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_walking_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_day_sleep_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_day_sleep_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_day_sleep_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_day_sleep_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_day_sleep_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_day_sleep_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_day_sleep_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_day_sleep_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_stretching_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_stretching_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_stretching_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_stretching_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_stretching_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_stretching_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_stretching_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_stretching_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_juggling_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_juggling_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_juggling_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_juggling_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_juggling_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_juggling_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_juggling_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_juggling_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_canoe_slalom_video_watching_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_canoe_slalom_video_watching_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_canoe_slalom_video_watching_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_canoe_slalom_video_watching_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_canoe_slalom_video_watching_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_canoe_slalom_video_watching_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_canoe_slalom_video_watching_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_canoe_slalom_video_watching_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_between_radio_groups"
+            android:text="@string/evening_test_action_creativity_time_label_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_font_size" />
+
+        <RadioGroup
+            android:id="@+id/evening_test_action_creativity_time_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:padding="0.5dp">
+
+            <RadioButton
+                android:id="@+id/evening_test_action_creativity_time_none"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/not_at_all"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_creativity_time_15_30_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_15_30_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_creativity_time_30_60_minutes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_30_60_minutes"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_creativity_time_1_2_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_1_2_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_creativity_time_2_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/_2_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+            <RadioButton
+                android:id="@+id/evening_test_action_creativity_time_more_than_3_hours"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/form_field_height"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_box_selector"
+                android:button="@android:color/transparent"
+                android:padding="@dimen/text_padding"
+                android:text="@string/more_then_3_hours"
+                android:textAlignment="center"
+                android:textColor="@drawable/radio_button_box_text_color_selector"
+                android:textSize="@dimen/small_text_font_size" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/evening_test_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_between_forms"
+            android:text="@string/evening_test_submit_button_text" />
+
+    </LinearLayout>
+
+</ScrollView>

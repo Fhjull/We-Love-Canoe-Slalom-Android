@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="ru.dillab.welovecanoeslalomandroid.MainMenuFragment"
+        android:label="MainMenuFragment">
+        <action
+            android:id="@+id/action_mainMenuFragment_to_testsMenuFragment"
+            app:destination="@id/testsMenuFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testsMenuFragment"
+        android:name="ru.dillab.welovecanoeslalomandroid.ui.tests.TestsMenuFragment"
+        android:label="fragment_tests_menu"
+        tools:layout="@layout/fragment_tests_menu">
+        <action
+            android:id="@+id/action_testsMenuFragment_to_morningTestFragment"
+            app:destination="@id/morningTestFragment" />
+        <action
+            android:id="@+id/action_testsMenuFragment_to_eveningTestFragment"
+            app:destination="@id/eveningTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="ru.dillab.welovecanoeslalomandroid.ui.results.ResultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" />
+    <fragment
+        android:id="@+id/eveningTestFragment"
+        android:name="ru.dillab.welovecanoeslalomandroid.ui.tests.eveningTest.EveningTestFragment"
+        android:label="@string/evening_test_fragment_label">
+        <action
+            android:id="@+id/action_eveningTestFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment"
+            app:popUpTo="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/morningTestFragment"
+        android:name="ru.dillab.welovecanoeslalomandroid.ui.tests.morningTest.MorningTestFragment"
+        android:label="@string/morning_test_fragment_label">
+        <action
+            android:id="@+id/action_morningTestFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment"
+            app:popUpTo="@id/mainMenuFragment" />
+    </fragment>
+</navigation>

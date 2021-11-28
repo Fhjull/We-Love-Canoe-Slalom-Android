@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Мы любим гребной слалом</string>
+    <string name="morning_test_fragment_label">Утренний блок</string>
+    <string name="evening_test_fragment_label">Вечерний блок</string>
+
+    <string name="main_menu_tests_card_text">Заполнить Дневник</string>
+    <string name="main_menu_results_card_text">Результаты</string>
+    <string name="tests_menu_morning_test_card_text">Утренний тест</string>
+    <string name="tests_menu_evening_test_card_text">Вечерний тест</string>
+
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_10">10</string>
+    <string name="Yes">Да</string>
+    <string name="No">Нет</string>
+
+    <string name="morning_test_night_sleep_header_text">Ночной сон, часов</string>
+    <string name="morning_test_night_quality_header_text">Качество сна</string>
+    <string name="morning_test_night_quality_good_text">Отлично спала 👍</string>
+    <string name="morning_test_night_quality_bad_text">Ворочалась всю ночь 😒</string>
+    <string name="morning_test_night_quality_none_text">Не спала совсем 🤷‍♂️</string>
+    <string name="morning_test_pulse_sitting_header_text">Утренний пульс сидя</string>
+    <string name="morning_test_pulse_sitting_description_text">Сидеть после пробуждения 2 минуты, после чего произвести замер</string>
+    <string name="morning_test_pulse_standing_header_text">Утренний пульс стоя</string>
+    <string name="morning_test_pulse_standing_description_text">Стоять 2 минуты не двигаясь, после чего произвести замер</string>
+    <string name="morning_test_muscle_pain_header_text">Мониторинг мышечной боли</string>
+    <string name="morning_test_mood_header_text">Профиль настроения</string>
+    <string name="morning_test_mood_description_text">Оцени своё настроение по пятибалльной шкале, где при 5 чувство выражено в максимальной степени, а при 0 - его совсем нет</string>
+    <string name="morning_test_mood_happiness_label_text">Счастье 🤩</string>
+    <string name="morning_test_mood_vivacity_label_text">Бодрость 😏</string>
+    <string name="morning_test_mood_ambition_label_text">Амбициозность 😎</string>
+    <string name="morning_test_mood_cheerfulness_label_text">Весёлость 😂</string>
+    <string name="morning_test_mood_trepidation_label_text">Волнение 🙄</string>
+    <string name="morning_test_mood_irritability_label_text">Раздражённость 😬</string>
+    <string name="morning_test_mood_anger_label_text">Злость 😡</string>
+    <string name="morning_test_mood_sadness_label_text">Грусть 🙁</string>
+    <string name="morning_test_submit_button_text">Отправить</string>
+
+    <string name="evening_test_day_efficiency_header_text">Считаешь ли ты, что твой день в целом прошёл продуктивно?</string>
+    <string name="evening_test_today_events_header_text">Что сегодня было?</string>
+    <string name="evening_test_day_events_description_text">Что сегодня было на тренировке/тренировках? Легко ли они дались? Что понравилось, а что нет? Анализ проделанной работы. Запиши не только субъективные мысли, а так же при наличии ещё и конкретные цифры (напр. бег, максимальный вес штанги и пр.)</string>
+    <string name="evening_test_qualities_header_text">Развитию каких качеств ты уделила внимание сегодня?</string>
+    <string name="evening_test_qualities_strength_text">Сила</string>
+    <string name="evening_test_qualities_stamina_text">Выносливость</string>
+    <string name="evening_test_qualities_flexibility_text">Гибкость</string>
+    <string name="evening_test_qualities_coordination_text">Координация</string>
+    <string name="evening_test_qualities_agility_text">Ловкость</string>
+    <string name="evening_test_qualities_strength_endurance_text">Силовая выносливость</string>
+    <string name="evening_test_qualities_speed_endurance_text">Скоростная выносливость</string>
+    <string name="evening_test_qualities_technic_text">Техника</string>
+    <string name="evening_test_food_header_text">Питание в течении дня</string>
+    <string name="evening_test_food_breakfast_label_text">Завтрак</string>
+    <string name="evening_test_food_dinner_label_text">Обед</string>
+    <string name="evening_test_food_supper_label_text">Ужин</string>
+    <string name="evening_test_food_snack_label_text">Перекусы между основными приёмами пищи</string>
+    <string name="evening_test_food_carbohydrates_label_text">Углеводная загрузка после тренировок</string>
+    <string name="evening_test_food_day_hydration_label_text">Адекватная гидратация в течении дня</string>
+    <string name="evening_test_food_workout_hydration_label_text">Адекватная гидратация в течении тренировки</string>
+    <string name="evening_test_action_header_text">Сколько времени за прошедший день у тебя ушло на следующие действия?</string>
+    <string name="evening_test_action_tv_watching_time_label_text">Просмотр телевизора</string>
+    <string name="not_at_all">Ниско\nлько</string>
+    <string name="_15_30_minutes">15 – 30 минут</string>
+    <string name="_30_60_minutes">30 – 60 минут</string>
+    <string name="_1_2_hours">1 – 2 часа</string>
+    <string name="_2_3_hours">2 – 3 часа</string>
+    <string name="more_then_3_hours">Более 3 часов</string>
+    <string name="evening_test_action_workout_time_label_text">Тренировки</string>
+    <string name="evening_test_action_studying_time_label_text">Учёба</string>
+    <string name="evening_test_action_online_games_time_label_text">Игры онлайн</string>
+    <string name="evening_test_action_walking_time_label_text">Прогулка</string>
+    <string name="evening_test_action_day_sleep_time_label_text">Дневной сон</string>
+    <string name="evening_test_action_stretching_time_label_text">Растяжка</string>
+    <string name="evening_test_action_juggling_time_label_text">Жонглирование</string>
+    <string name="evening_test_action_canoe_slalom_video_watching_time_label_text">Просмотр слаломных видео</string>
+    <string name="evening_test_action_creativity_time_label_text">Творчество (музыка, рисование и т.д.)</string>
+    <string name="evening_test_submit_button_text">Отправить</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
