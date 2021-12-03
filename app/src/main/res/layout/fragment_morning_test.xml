@@ -184,33 +184,36 @@
 
             <RadioButton
                 android:id="@+id/morning_test_night_quality_good"
-                android:layout_width="200dp"
+                android:layout_width="@dimen/border_box_width"
                 android:layout_height="@dimen/form_field_height"
                 android:background="@drawable/radio_button_box_selector"
                 android:button="@android:color/transparent"
                 android:gravity="center"
+                android:padding="@dimen/text_padding"
                 android:text="@string/morning_test_night_quality_good_text"
                 android:textColor="@drawable/radio_button_box_text_color_selector"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioButton
                 android:id="@+id/morning_test_night_quality_bad"
-                android:layout_width="200dp"
+                android:layout_width="@dimen/border_box_width"
                 android:layout_height="@dimen/form_field_height"
                 android:background="@drawable/radio_button_box_selector"
                 android:button="@android:color/transparent"
                 android:gravity="center"
+                android:padding="@dimen/text_padding"
                 android:text="@string/morning_test_night_quality_bad_text"
                 android:textColor="@drawable/radio_button_box_text_color_selector"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioButton
                 android:id="@+id/morning_test_night_quality_none"
-                android:layout_width="200dp"
+                android:layout_width="@dimen/border_box_width"
                 android:layout_height="@dimen/form_field_height"
                 android:background="@drawable/radio_button_box_selector"
                 android:button="@android:color/transparent"
                 android:gravity="center"
+                android:padding="@dimen/text_padding"
                 android:text="@string/morning_test_night_quality_none_text"
                 android:textColor="@drawable/radio_button_box_text_color_selector"
                 android:textSize="@dimen/small_text_font_size" />
@@ -230,6 +233,7 @@
             android:text="@string/morning_test_pulse_sitting_description_text"
             android:textSize="@dimen/small_text_font_size" />
 
+        <!--
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/morning_test_pulse_sitting_edit_text"
             android:layout_width="60dp"
@@ -238,6 +242,27 @@
             android:inputType="number"
             android:paddingStart="10dp"
             android:paddingEnd="10dp" />
+            -->
+
+        <!-- Took this view design from developer.android.com
+        codelab "Unscramble app"-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/morning_test_pulse_sitting_edit_text_layout"
+            style="@style/Widget.Unscramble.TextInputLayout.OutlinedBox"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            app:errorIconDrawable="@drawable/ic_error"
+            app:helperTextTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/morning_test_pulse_sitting_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -252,14 +277,22 @@
             android:text="@string/morning_test_pulse_standing_description_text"
             android:textSize="@dimen/small_text_font_size" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/morning_test_pulse_standing_edit_text"
-            android:layout_width="60dp"
-            android:layout_height="@dimen/form_field_height"
-            android:background="@drawable/border_box"
-            android:inputType="number"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/morning_test_pulse_standing_edit_text_layout"
+            style="@style/Widget.Unscramble.TextInputLayout.OutlinedBox"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            app:errorIconDrawable="@drawable/ic_error"
+            app:helperTextTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/morning_test_pulse_standing_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="wrap_content"
@@ -437,7 +470,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/morning_test_mood_vivacity_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <!--
@@ -532,7 +564,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/morning_test_mood_ambition_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <!--
@@ -627,7 +658,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/morning_test_mood_cheerfulness_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <!--
@@ -722,7 +752,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/morning_test_mood_trepidation_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <!--
@@ -817,7 +846,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/morning_test_mood_irritability_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <!--
@@ -912,7 +940,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/morning_test_mood_anger_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <!--
@@ -1007,7 +1034,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/morning_test_mood_sadness_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <!--

@@ -19,4 +19,11 @@
     <color name="red_smile">#FFd30100</color>
     <color name="selected_emoji">#B2EBF2</color>
 
+    <color name="indigo_200">#FF9FA8DA</color>
+    <color name="indigo_500">#FF3F51B5</color>
+    <color name="indigo_800">#FF283593</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_700">#FF0288D1</color>
+    <color name="red_700">#FFD32F2F</color>
+    <color name="red_400">#FFEF5350</color>
 </resources>

@@ -8,6 +8,9 @@
     <string name="tests_menu_morning_test_card_text">Утренний тест</string>
     <string name="tests_menu_evening_test_card_text">Вечерний тест</string>
 
+    <string name="edit_text_max_error_message">Значение слишком большое!</string>
+    <string name="edit_text_min_error_message">Значение слишком маленькое!</string>
+
     <string name="_0">0</string>
     <string name="_1">1</string>
     <string name="_2">2</string>

@@ -27,6 +27,7 @@
                 android:id="@+id/evening_test_day_efficiency_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="1dp"
                 android:background="@android:color/transparent"
                 android:button="@android:color/transparent"
                 android:drawableTop="@drawable/emoji_smile"
@@ -38,6 +39,7 @@
             <RadioButton
                 android:id="@+id/evening_test_day_efficiency_no"
                 android:layout_width="wrap_content"
+                android:padding="1dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/space_between_emojis"
                 android:background="@android:color/transparent"
@@ -63,78 +65,131 @@
             android:text="@string/evening_test_day_events_description_text"
             android:textSize="@dimen/small_text_font_size" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/evening_test_today_events"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/evening_test_today_events_edit_text_layout"
+            style="@style/Widget.Unscramble.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_box"
-            android:inputType="textMultiLine"
-            android:minLines="3"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
+            android:hint=""
+            app:errorIconDrawable="@drawable/ic_error"
+            app:helperTextTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/evening_test_today_events_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/space_between_forms"
             android:text="@string/evening_test_qualities_header_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/large_text_font_size" />
 
         <CheckBox
             android:id="@+id/evening_test_qualities_strength_check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/border_box_width"
+            android:layout_height="@dimen/form_field_height"
+            android:background="@drawable/check_box_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
             android:text="@string/evening_test_qualities_strength_text"
+            android:textColor="@drawable/radio_button_box_text_color_selector"
             android:textSize="@dimen/small_text_font_size" />
 
         <CheckBox
             android:id="@+id/evening_qualities_stamina_check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/border_box_width"
+            android:layout_height="@dimen/form_field_height"
+            android:layout_marginTop="@dimen/space_between_emojis"
+            android:background="@drawable/check_box_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
             android:text="@string/evening_test_qualities_stamina_text"
+            android:textColor="@drawable/radio_button_box_text_color_selector"
             android:textSize="@dimen/small_text_font_size" />
 
         <CheckBox
             android:id="@+id/evening_test_qualities_flexibility_check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/border_box_width"
+            android:layout_height="@dimen/form_field_height"
+            android:layout_marginTop="@dimen/space_between_emojis"
+            android:background="@drawable/check_box_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
             android:text="@string/evening_test_qualities_flexibility_text"
+            android:textColor="@drawable/radio_button_box_text_color_selector"
             android:textSize="@dimen/small_text_font_size" />
 
         <CheckBox
             android:id="@+id/evening_test_qualities_coordination_check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/border_box_width"
+            android:layout_height="@dimen/form_field_height"
+            android:layout_marginTop="@dimen/space_between_emojis"
+            android:background="@drawable/check_box_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
             android:text="@string/evening_test_qualities_coordination_text"
+            android:textColor="@drawable/radio_button_box_text_color_selector"
             android:textSize="@dimen/small_text_font_size" />
 
         <CheckBox
             android:id="@+id/evening_test_qualities_agility_check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/border_box_width"
+            android:layout_height="@dimen/form_field_height"
+            android:layout_marginTop="@dimen/space_between_emojis"
+            android:background="@drawable/check_box_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
             android:text="@string/evening_test_qualities_agility_text"
+            android:textColor="@drawable/radio_button_box_text_color_selector"
             android:textSize="@dimen/small_text_font_size" />
 
         <CheckBox
             android:id="@+id/evening_test_qualities_strength_endurance_check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/border_box_width"
+            android:layout_height="@dimen/form_field_height"
+            android:layout_marginTop="@dimen/space_between_emojis"
+            android:background="@drawable/check_box_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
             android:text="@string/evening_test_qualities_strength_endurance_text"
+            android:textColor="@drawable/radio_button_box_text_color_selector"
             android:textSize="@dimen/small_text_font_size" />
 
         <CheckBox
             android:id="@+id/evening_test_qualities_speed_endurance_check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/border_box_width"
+            android:layout_height="@dimen/form_field_height"
+            android:layout_marginTop="@dimen/space_between_emojis"
+            android:background="@drawable/check_box_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
             android:text="@string/evening_test_qualities_speed_endurance_text"
+            android:textColor="@drawable/radio_button_box_text_color_selector"
             android:textSize="@dimen/small_text_font_size" />
 
         <CheckBox
             android:id="@+id/evening_test_qualities_technic_check_box"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/border_box_width"
+            android:layout_height="@dimen/form_field_height"
+            android:layout_marginTop="@dimen/space_between_emojis"
+            android:background="@drawable/check_box_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
             android:text="@string/evening_test_qualities_technic_text"
+            android:textColor="@drawable/radio_button_box_text_color_selector"
             android:textSize="@dimen/small_text_font_size" />
 
         <TextView
@@ -157,7 +212,6 @@
                 android:layout_marginStart="@dimen/food_text_start_margin"
                 android:layout_weight="3"
                 android:text="@string/evening_test_food_breakfast_label_text"
-                android:textColor="@color/black"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioGroup
@@ -211,7 +265,6 @@
                 android:layout_marginStart="@dimen/food_text_start_margin"
                 android:layout_weight="3"
                 android:text="@string/evening_test_food_dinner_label_text"
-                android:textColor="@color/black"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioGroup
@@ -265,7 +318,6 @@
                 android:layout_marginStart="@dimen/food_text_start_margin"
                 android:layout_weight="3"
                 android:text="@string/evening_test_food_supper_label_text"
-                android:textColor="@color/black"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioGroup
@@ -319,7 +371,6 @@
                 android:layout_marginStart="@dimen/food_text_start_margin"
                 android:layout_weight="3"
                 android:text="@string/evening_test_food_snack_label_text"
-                android:textColor="@color/black"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioGroup
@@ -373,7 +424,6 @@
                 android:layout_marginStart="@dimen/food_text_start_margin"
                 android:layout_weight="3"
                 android:text="@string/evening_test_food_carbohydrates_label_text"
-                android:textColor="@color/black"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioGroup
@@ -427,7 +477,6 @@
                 android:layout_marginStart="@dimen/food_text_start_margin"
                 android:layout_weight="3"
                 android:text="@string/evening_test_food_day_hydration_label_text"
-                android:textColor="@color/black"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioGroup
@@ -481,7 +530,6 @@
                 android:layout_marginStart="@dimen/food_text_start_margin"
                 android:layout_weight="3"
                 android:text="@string/evening_test_food_workout_hydration_label_text"
-                android:textColor="@color/black"
                 android:textSize="@dimen/small_text_font_size" />
 
             <RadioGroup
@@ -527,7 +575,6 @@
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/space_between_forms"
             android:text="@string/evening_test_action_header_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/large_text_font_size" />
 
         <TextView
@@ -535,7 +582,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_tv_watching_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -637,7 +683,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_workout_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -739,7 +784,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_studying_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -841,7 +885,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_online_games_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -943,7 +986,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_walking_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -1045,7 +1087,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_day_sleep_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -1147,7 +1188,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_stretching_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -1249,7 +1289,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_juggling_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -1351,7 +1390,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_canoe_slalom_video_watching_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup
@@ -1453,7 +1491,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_between_radio_groups"
             android:text="@string/evening_test_action_creativity_time_label_text"
-            android:textColor="@color/black"
             android:textSize="@dimen/small_text_font_size" />
 
         <RadioGroup

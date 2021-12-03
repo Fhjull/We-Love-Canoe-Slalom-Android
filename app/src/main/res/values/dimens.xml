@@ -16,6 +16,7 @@
     <dimen name="space_between_emojis">8dp</dimen>
     <dimen name="food_text_start_margin">20dp</dimen>
     <dimen name="food_radio_group_end_margin">50dp</dimen>
+    <dimen name="border_box_width">150dp</dimen>
 
     <dimen name="text_padding">5dp</dimen>
 </resources>

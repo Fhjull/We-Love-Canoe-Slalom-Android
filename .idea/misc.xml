@@ -5,9 +5,17 @@
       <map>
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/border.xml" value="0.2703125" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/border_box.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/check_box_regular.xml" value="0.22407407407407406" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/check_box_selected.xml" value="0.22407407407407406" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/check_box_selector.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/emoji_color_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/ic_error.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_box_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_box_text_selector.xml" value="0.2703125" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_button_box_regular.xml" value="0.22407407407407406" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_button_box_selected.xml" value="0.22407407407407406" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_button_box_selector.xml" value="0.22407407407407406" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_button_box_text_color_selector.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_button_emoji_circle_background_selected.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_button_happy_selector.xml" value="0.2703125" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/drawable/radio_circle_regular.xml" value="0.2703125" />
@@ -35,6 +43,8 @@
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/fragment_tests_menu.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/morning_test.xml" value="0.264" />
         <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/layout/results.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/mipmap-anydpi-v26/ic_error.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/dilla/AndroidStudioProjects/WeLoveCanoeSlalomAndroid/app/src/main/res/mipmap-anydpi-v26/ic_error_round.xml" value="0.14635416666666667" />
       </map>
     </option>
   </component>
