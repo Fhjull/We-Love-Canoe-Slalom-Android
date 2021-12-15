@@ -67,7 +67,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/evening_test_today_events_edit_text_layout"
-            style="@style/Widget.Unscramble.TextInputLayout.OutlinedBox"
+            style="@style/Widget.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint=""

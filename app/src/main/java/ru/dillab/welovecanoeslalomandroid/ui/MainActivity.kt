@@ -1,31 +1,31 @@
-package ru.dillab.welovecanoeslalomandroid
+package ru.dillab.welovecanoeslalomandroid.ui
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.inputmethod.InputMethodManager
-import android.widget.EditText
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import ru.dillab.welovecanoeslalomandroid.databinding.ActivityMainBinding
+import androidx.navigation.ui.setupActionBarWithNavController
+import ru.dillab.welovecanoeslalomandroid.R
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
         // Getting a reference to the nav_host_fragment and assign it to the navController property
+        // This is needed to construct our navigation as we specified in nav_graph.xml
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 
+        // Adds up button (back button) in title (top left corner)
+        setupActionBarWithNavController(navController)
     }
 
-    // This method allows to handle the up button, I don't know why it is so, needs checking
+    // This method allows to handle the up button.
+    // Needed with setupActionBarWithNavController(navController)
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
     }

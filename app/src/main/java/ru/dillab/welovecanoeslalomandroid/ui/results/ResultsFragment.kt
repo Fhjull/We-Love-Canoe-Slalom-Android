@@ -6,17 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.navArgs
 import ru.dillab.welovecanoeslalomandroid.databinding.FragmentResultsBinding
-import ru.dillab.welovecanoeslalomandroid.ui.tests.TestViewModel
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class ResultsFragment : Fragment() {
 
     private var _binding: FragmentResultsBinding? = null
     private val binding get() = _binding!!
-
-    private val viewModel: TestViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,6 +34,12 @@ class ResultsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // Getting today data
+        // val formatter = SimpleDateFormat("E d M y", Locale.getDefault())
+        // val calendar = Calendar.getInstance()
+        // val date = formatter.format(calendar.time)
+        // binding.text.text = date
     }
 
     override fun onDestroyView() {

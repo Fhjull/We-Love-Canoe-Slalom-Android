@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Мы любим гребной слалом</string>
-    <string name="morning_test_fragment_label">Утренний блок</string>
-    <string name="evening_test_fragment_label">Вечерний блок</string>
+    <string name="main_menu_fragment_title">Мы любим гребной слалом</string>
+    <string name="test_menu_fragment_title">Выберите тест</string>
+    <string name="morning_test_fragment_title">Утренний блок</string>
+    <string name="evening_test_fragment_title">Вечерний блок</string>
+    <string name="results_fragment_title">Результаты</string>
 
     <string name="main_menu_tests_card_text">Заполнить Дневник</string>
     <string name="main_menu_results_card_text">Результаты</string>
@@ -10,6 +13,7 @@
 
     <string name="edit_text_max_error_message">Значение слишком большое!</string>
     <string name="edit_text_min_error_message">Значение слишком маленькое!</string>
+    <string name="edit_text_not_digits_error_message">Поле должно содержать только цифры!</string>
 
     <string name="_0">0</string>
     <string name="_1">1</string>

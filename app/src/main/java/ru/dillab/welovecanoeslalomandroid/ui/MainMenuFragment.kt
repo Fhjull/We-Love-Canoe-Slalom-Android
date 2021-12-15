@@ -1,4 +1,4 @@
-package ru.dillab.welovecanoeslalomandroid
+package ru.dillab.welovecanoeslalomandroid.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import ru.dillab.welovecanoeslalomandroid.databinding.FragmentMainMenuBinding
-import ru.dillab.welovecanoeslalomandroid.databinding.FragmentMorningTestBinding
+
 
 
 class MainMenuFragment : Fragment() {

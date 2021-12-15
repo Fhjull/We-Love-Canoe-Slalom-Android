@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/mainMenuFragment"
-        android:name="ru.dillab.welovecanoeslalomandroid.MainMenuFragment"
-        android:label="MainMenuFragment">
+        android:name="ru.dillab.welovecanoeslalomandroid.ui.MainMenuFragment"
+        android:label="@string/main_menu_fragment_title">
         <action
             android:id="@+id/action_mainMenuFragment_to_testsMenuFragment"
             app:destination="@id/testsMenuFragment" />
@@ -19,7 +19,7 @@
     <fragment
         android:id="@+id/testsMenuFragment"
         android:name="ru.dillab.welovecanoeslalomandroid.ui.tests.TestsMenuFragment"
-        android:label="fragment_tests_menu"
+        android:label="@string/test_menu_fragment_title"
         tools:layout="@layout/fragment_tests_menu">
         <action
             android:id="@+id/action_testsMenuFragment_to_morningTestFragment"
@@ -31,12 +31,12 @@
     <fragment
         android:id="@+id/resultsFragment"
         android:name="ru.dillab.welovecanoeslalomandroid.ui.results.ResultsFragment"
-        android:label="fragment_results"
+        android:label="@string/results_fragment_title"
         tools:layout="@layout/fragment_results" />
     <fragment
         android:id="@+id/eveningTestFragment"
         android:name="ru.dillab.welovecanoeslalomandroid.ui.tests.eveningTest.EveningTestFragment"
-        android:label="@string/evening_test_fragment_label">
+        android:label="@string/evening_test_fragment_title">
         <action
             android:id="@+id/action_eveningTestFragment_to_resultsFragment"
             app:destination="@id/resultsFragment"
@@ -45,7 +45,7 @@
     <fragment
         android:id="@+id/morningTestFragment"
         android:name="ru.dillab.welovecanoeslalomandroid.ui.tests.morningTest.MorningTestFragment"
-        android:label="@string/morning_test_fragment_label">
+        android:label="@string/morning_test_fragment_title">
         <action
             android:id="@+id/action_morningTestFragment_to_resultsFragment"
             app:destination="@id/resultsFragment"
